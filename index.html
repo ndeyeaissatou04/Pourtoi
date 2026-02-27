@@ -111,8 +111,8 @@
 
     function handleMusicUpload(input) {
         const file = input.files[0];
-        if (file && file.size < 5 * 1024 * 1024) document.getElementById('main-audio').src = URL.createObjectURL(file);
-        else if(file) alert("Fichier trop lourd (>5MB)");
+        if (file && file.size < 10 * 1024 * 1024) document.getElementById('main-audio').src = URL.createObjectURL(file);
+        else if(file) alert("Fichier trop lourd (>10MB)");
     }
 
     function previewSite() {
@@ -187,4 +187,5 @@
 </script>
 </body>
 </html>
+
 
